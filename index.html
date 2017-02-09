@@ -11,6 +11,12 @@
 
       var count = 0
 
+      var Splash = {
+        view: function() {
+          return m("a", {href: "#!/hello"}, "Enter!")
+        }
+      }
+
       var Hello = {
         view: function() {
           return m("main", [
