@@ -26,7 +26,10 @@
         }
       }
 
-      m.mount(root, Hello)
+      m.route(root, "/splash", {
+        "/splash": Splash,
+        "/hello": Hello,
+      })
     </script>
   </body>
 </html>
